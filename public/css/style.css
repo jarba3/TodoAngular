@@ -1,0 +1,31 @@
+.menu{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	border: 1px solid pink;
+	text-decoration: none;
+	font-size: 22px;
+	color: pink;
+	text-align: center;
+	border-radius: 5px;
+	background: blue;
+}
+ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.done{
+	color: #666;
+	text-decoration: line-through;
+}
+.delete{
+	color: #f00;
+}
+.close{
+	cursor: pointer;
+}
+.task{
+	width: 250px;
+	display: inline-block;
+}
