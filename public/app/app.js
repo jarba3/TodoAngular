@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('aston', ['ngRoute', 'todo'])
+angular.module('aston', ['ngRoute', 'todo', 'blog'])
 
 .config(function($routeProvider) {
 	$routeProvider.when('/', {
