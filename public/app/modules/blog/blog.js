@@ -9,7 +9,12 @@ angular.module('blog', [])
 	})
 
 	.when('/ajout-article', {
-		templateUrl: 'template/article-form.html',
+		templateUrl: 'template/add.html',
 		controller: 'addCtrl'
+	})
+
+	.when('/editer-article/:id', {
+		templateUrl: 'template/edit.html',
+		controller: 'editCtrl'
 	})
 });
