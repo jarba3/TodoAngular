@@ -1,9 +1,9 @@
 <h1>Blog</h1>
 
-<a href="#ajout-article">Ajouter un article</a>
+<a href="#/blog/ajout-article">Ajouter un article</a>
 
 <div ng-repeat="article in articles">
 	<h2>{{ article.title }}</h2>
 	<p>{{ article.teaser }}</p>
-	<a href="#/editer-article/{{ article.id }}" class="btn btn-success">Editer</a>
+	<a href="#/blog/editer-article/{{ article.id }}" class="btn btn-success">Editer</a>
 </div>

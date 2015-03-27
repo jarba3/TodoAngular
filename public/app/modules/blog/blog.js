@@ -8,12 +8,12 @@ angular.module('blog', [])
 		controller: 'blogCtrl'
 	})
 
-	.when('/ajout-article', {
+	.when('/blog/ajout-article', {
 		templateUrl: 'template/add.html',
 		controller: 'addCtrl'
 	})
 
-	.when('/editer-article/:id', {
+	.when('/blog/editer-article/:id', {
 		templateUrl: 'template/edit.html',
 		controller: 'editCtrl'
 	})
