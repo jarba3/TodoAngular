@@ -17,4 +17,9 @@ angular.module('blog', [])
 		templateUrl: 'template/edit.html',
 		controller: 'editCtrl'
 	})
+
+	.when('/blog/article/:id', {
+		templateUrl: 'template/show.html',
+		controller: 'showCtrl'
+	})
 });

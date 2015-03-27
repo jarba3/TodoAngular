@@ -3,7 +3,10 @@
 <a href="#/blog/ajout-article">Ajouter un article</a>
 
 <div ng-repeat="article in articles">
-	<h2>{{ article.title }}</h2>
-	<p>{{ article.teaser }}</p>
+	<a href="#/blog/article/{{ article.id }}">
+		<h2>{{ article.title }}</h2>
+		<p>{{ article.teaser }}</p>
+	</a>
 	<a href="#/blog/editer-article/{{ article.id }}" class="btn btn-success">Editer</a>
+	<a href="" class="btn btn-danger" ng-click="delete(article.id)">Supprimer</a>
 </div>

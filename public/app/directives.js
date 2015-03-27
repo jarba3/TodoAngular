@@ -1,11 +1,5 @@
 'use strict'
 
-
-/**
-* aston Module
-*
-* Description
-*/
 angular.module('aston')
 
 .directive('myDirective', function(){
@@ -17,7 +11,7 @@ angular.module('aston')
 		// scope: {}, // {} = isolate, true = child, false/undefined = no change
 		// controller: function($scope, $element, $attrs, $transclude) {},
 		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
-		// restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+		restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
 		template: '<h3>My first directive</h3>',
 		// templateUrl: '',
 		// replace: true,

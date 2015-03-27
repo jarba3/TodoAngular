@@ -20,11 +20,11 @@ angular.module('blog')
 		postArticle: function(article){
 			return $http.post('/articles', article);
 		},
-		putArticle: function(id){
-			return $http.put('/articles/'+id);
+		putArticle: function(id, article){
+			return $http.put('/articles/'+id, article);
 		},
-		deleteArticle: function(){
-
+		deleteArticle: function(id){
+			return $http.delete('/articles/'+id);
 		}
 	};
 });
